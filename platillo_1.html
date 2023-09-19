@@ -3,25 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/platillos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
     <title>SaborPerú - Comida Peruana</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <h1>SaborPerú</h1>
-      <img src="img/header_peru.jpg" alt="Imagen de Perú" />
     </header>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="platillo_1.html">Ceviche</a></li>
-        <li><a href="platillo_2.html">Aji de Gallina</a></li>
-        <li><a href="ingredientes.html">Ingredientes</a></li>
+    <nav class="header">
+      <ul class="nav-container">
+        <li class="nav-container-element"><a href="index.html">Inicio</a></li>
+        <li class="nav-container-element">
+          <a href="platillo_1.html">Ceviche</a>
+        </li>
+        <li class="nav-container-element">
+          <a href="platillo_2.html">Aji de Gallina</a>
+        </li>
+        <li class="nav-container-element">
+          <a href="ingredientes.html">Ingredientes</a>
+        </li>
       </ul>
     </nav>
+
     <main>
       <header>
-        <h2 style="text-align: center">Ceviche</h2>
+        <h2 style="text-align: center" class="post-title">Ceviche</h2>
         <img
           src="img/plato1.jpg"
           alt="imagen del ceviche peruano"
@@ -29,8 +40,8 @@
         />
       </header>
       <section>
-        <article>
-          <ul>
+        <article class="post-container">
+          <ul class="container-elements">
             <li>
               El ceviche es, sin duda, uno de los platos más icónicos de la
               cocina peruana. Se trata de pescado o mariscos frescos que se
@@ -54,10 +65,10 @@
           </ul>
         </article>
         <section>
-          <article>
+          <article class="post-container">
             <h3>Receta</h3>
             <h4>Ingredientes</h4>
-            <ul>
+            <ul class="container-elements">
               <li>
                 500 gramos de pescado blanco fresco (como corvina o lenguado),
                 cortado en cubos pequeños.
@@ -78,7 +89,7 @@
               </li>
             </ul>
             <h4>Instrucciones</h4>
-            <ol>
+            <ol class="container-elements">
               <li>
                 Preparar el pescado: Lava bien el pescado y córtalo en cubos
                 pequeños. Asegúrate de eliminar cualquier piel o espinas. Coloca
@@ -128,40 +139,17 @@
             </p>
           </article>
         </section>
-
-        <button><a href="index.html">Volver</a></button>
+        <a href="index.html" class="return-btn">Volver</a>
+        <a href="platillo_2.html" class="next-btn">Siguiente post</a>
       </section>
     </main>
-    <hr />
     <footer>
       <p>
         Sitio web de comida SaborPerú desarrollado por Juan Bermúdez Castañeda.
-        Contacto: juan.bermudez1@udea.edu.co
       </p>
+      <a href="mailto:juan.bermudez1@udea.edu.co"
+        >Contacto: juan.bermudez1@udea.edu.co</a
+      >
     </footer>
-
-    [class="hijo 1"] => tengo 2 resultaods
-    > sirve para indicar que tiene un elemento DENTRO
-    [class="papa"] > [class="hijo 1"] => tengo 2 resultados
-    [class="papa"] > [class="hijo 1"]:nth-child(3) => tengo 1 resultados
-    <section class="papa">
-      <p class="hijo 1">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-        consectetur dolores velit a optio. Sapiente, libero exercitationem
-        quidem doloremque voluptates iusto totam in, saepe facilis ratione,
-        minus facere delectus vero!
-      </p>
-      <p class="hijo 1">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quam
-        doloribus voluptas eum corrupti atque tenetur necessitatibus laborum,
-        nostrum vitae amet eaque sit neque modi ad ab quidem quae accusantium?
-      </p>
-      <p class="hijo 1">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia quam
-        doloribus voluptas eum corrupti atque tenetur necessitatibus laborum,
-        nostrum vitae amet eaque sit neque modi ad ab quidem quae accusantium?
-        webDrive.wdadwadwa by css selector [class="ClearSelectionButton"]
-      </p>
-    </section>
   </body>
 </html>

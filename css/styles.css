@@ -1,13 +1,12 @@
 /* Estilos para la barra de navegación */
 * {
-    list-style: none;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-a:hover {
+.see-more-btn:hover {
     text-decoration: underline;
 }
 
@@ -60,7 +59,7 @@ main {
     padding: 20px;
 }
 
-header h2 {
+.sub-title {
     font-size: 24px;
     color: #1D3557;
     margin-bottom: 20px;
@@ -70,26 +69,26 @@ section {
     margin-bottom: 40px;
 }
 
-article {
+.post-container {
     background-color: #F1FAEE;
     padding: 20px;
     border-radius: 5px;
 }
 
-h3 {
+.post-container h3 {
     font-size: 20px;
     color: #E63946;
     margin-bottom: 10px;
 }
 
-p {
+.post-container p {
     font-size: 16px;
     color: #333;
     line-height: 1.4;
     margin-bottom: 15px;
 }
 
-a {
+.post-container a {
     color: #1D3557;
     font-weight: bold;
 }
@@ -120,4 +119,40 @@ footer a {
 /* Cambia el color del enlace de correo electrónico en hover */
 footer a:hover {
     color: #F1FAEE;
+}
+
+/* Estilos que se pueden repetir en diferentes páginas */
+.return-btn {
+    background-color: #E63946;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.return-btn:hover {
+    background-color: #1D3557;
+    color: #F1FAEE;
+}
+
+.next-btn {
+    background-color: #1D3557;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.next-btn:hover {
+    background-color: #E63946;
 }
